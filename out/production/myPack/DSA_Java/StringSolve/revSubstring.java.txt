@@ -1,0 +1,19 @@
+public class revSubstring {
+    public int lengthOfLongestSubstring(String s) {
+    int length=s.length();
+    int right,left;
+    right=0;
+    left=0;
+    int mainLength=0;
+    HashMap<Character,Integer> map=new HashMap<>();
+      while(right<length){
+          if(map.containsKey(s.charAt(right)))
+              left=Math.max(map.get(s.charAt(right))+1,left);
+
+            map.put(s.charAt(right),right);
+            mainLength=Math.max(mainLength,(right-left)+1);
+            right++;
+      }
+      return mainLength;
+    }
+}

@@ -1,0 +1,6 @@
+package second;
+public class second extends first{
+public first(){
+System.out.println("the balance is " + balance);
+}
+}

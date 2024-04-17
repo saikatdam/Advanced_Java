@@ -1,0 +1,5 @@
+public enum enumTest {
+    SUNDAY , MONDAY , TUESDAY , WEDNOUSDAY , THRUSDAY , FRIDAY ,SATURDAY;
+}
+
+pub
